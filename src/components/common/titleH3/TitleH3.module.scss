@@ -1,0 +1,21 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.titleH3 {
+    @include text (26px, 500, 39px);
+    position: relative;
+    padding-left: 120px;
+    &::before {
+        content: "";
+        width: 100px;
+        height: 3px;
+        background-color: $secondaryColor;
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
+}

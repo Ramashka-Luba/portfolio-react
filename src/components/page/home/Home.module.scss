@@ -1,3 +1,16 @@
-@import "./../../../scss/abstracts/elements/elements";
-@import "./../../../scss/abstracts/mixins/mixins";
-@import "./../../../scss/abstracts/variables/variables";
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.home {
+    height: 100vh;
+    .wrapper {
+        .inner {
+            .homeContent {
+                background-color: $primaryColor;
+            }
+            .photo {}
+        }
+    }
+
+}
