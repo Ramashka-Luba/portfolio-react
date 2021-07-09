@@ -1,0 +1,8 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.titleH2 {
+    font-family: $ArchivoBlack;
+    @include text (50px, 900, 54px);
+}

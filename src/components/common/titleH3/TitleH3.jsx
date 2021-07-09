@@ -1,4 +1,3 @@
-import { isPropertySignature, preProcessFile } from "typescript";
 import s from "./TitleH3.module.scss";
 
 export const TitleH3 = (props) => {

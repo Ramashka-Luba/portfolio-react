@@ -4,13 +4,34 @@
 
 .home {
     height: 100vh;
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .wrapper {
-        .inner {
-            .homeContent {
-                background-color: $primaryColor;
+        display: flex;
+        .content {
+            display: flex;
+            align-items: center;
+            padding: 53px;
+            background-color: $primaryColor;
+            .contentText {
+                .titleH3 {}
+                .name {
+                    font-family: $ArchivoBlack;
+                    @include text (85px, 400, 92px);
+                    margin: 35px 0;
+                }
+                .titleH2 {}
+                .btn {
+                    margin-top: 45px;
+                }
             }
-            .photo {}
+        }
+        .photo {
+            .img {
+                
+            }
         }
     }
-
 }
