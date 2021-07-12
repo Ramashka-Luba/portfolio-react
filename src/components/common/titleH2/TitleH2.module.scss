@@ -5,4 +5,13 @@
 .titleH2 {
     font-family: $ArchivoBlack;
     @include text (50px, 900, 54px);
+    @media screen and (max-width: 1500px)  { 
+        @include text (40px, 700, 40px);
+    }
+    @media screen and (max-width: 1250px)  { 
+        @include text (30px, 700, 30px);
+    }
+    @media screen and (max-height: 789px)  { 
+        @include text (35px, 400, 40px);
+    }
 }

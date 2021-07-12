@@ -45,9 +45,9 @@ export const Home = () => {
                     </div>
                 </div>
                     
-                <div className={s.photo}>
-                    <img className={s.img} src={homePhoto} alt="photo" />
-                </div>
+                
+                <img className={s.img} src={homePhoto} alt="photo" />
+                
             </div>
         </div>
     );

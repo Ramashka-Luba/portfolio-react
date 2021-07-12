@@ -1,10 +1,10 @@
-import s from './App.module.scss';
+import './App.scss';
 import Home from './components/page/home/Home';
 
 
 export const App = () => { 
   return (
-    <div className={s.App}>
+    <div className="App">
       <Home/>
     </div>
   );

@@ -6,6 +6,10 @@
     @include text (26px, 500, 39px);
     position: relative;
     padding-left: 120px;
+    @media screen and (max-width: 1250px)  { 
+        @include text (20px, 500, 20px);
+        padding-left: 60px;
+    }
     &::before {
         content: "";
         width: 100px;
@@ -16,6 +20,8 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        
+        @media screen and (max-width: 1250px)  { 
+            width: 50px;
+        }
     }
 }
