@@ -1,0 +1,7 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.about {
+    @include text (26px, 500, 39px);
+}

@@ -3,25 +3,15 @@
 @import "./../../../scss/abstracts/variables";
 
 .titleH3 {
-    @include text (26px, 500, 39px);
-    position: relative;
-    padding-left: 120px;
-    @media screen and (max-width: 1250px)  { 
-        @include text (20px, 500, 20px);
-        padding-left: 60px;
-    }
-    &::before {
-        content: "";
-        width: 100px;
-        height: 3px;
-        background-color: $secondaryColor;
-
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        @media screen and (max-width: 1250px)  { 
-            width: 50px;
-        }
+    font-family: $ArchivoBlack;
+    @include text (50px, 900, 54px);
+    // @media screen and (max-width: 1500px)  { 
+    //     @include text (40px, 700, 40px);
+    // }
+    // @media screen and (max-width: 1250px)  { 
+    //     @include text (30px, 700, 30px);
+    // }
+    @media screen and (max-height: 850px)  { 
+        @include text (35px, 400, 40px);
     }
 }

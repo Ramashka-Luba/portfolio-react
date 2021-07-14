@@ -1,6 +1,7 @@
 import Button from "../../common/button/Button";
-import TitleH2 from "../../common/titleH2/TitleH2";
-import TitleH3 from "../../common/titleH3/TitleH3";
+import TitleH2 from "../../../components/common/titleH2/TitleH2";
+import TitleH3 from "../../../components/common/titleH3/TitleH3";
+
 import s from "./Home.module.scss";
 import homePhoto from "./../../../assets/images/homePhoto.png";
 import decor1 from "./../../../assets/images/decor/decor1.png";
@@ -19,16 +20,15 @@ export const Home = () => {
     return (
         <div className={s.home}>
             <div className={s.wrapper}>
-
                 <div className={s.content}>
                     <div className={s.decor}>
-                        <img className={s.shape1} src={decor1} alt="shape"/> 
-                        <img className={s.shape2} src={decor2} alt="shape"/>
-                        <img className={s.shape1} src={decor3} alt="shape"/>
-                        <img className={s.shape2} src={decor4} alt="shape"/>
-                        <img className={s.shape1} src={decor5} alt="shape"/>
+                        <img className={s.shape1} src={decor1} alt="shape" />
+                        <img className={s.shape2} src={decor2} alt="shape" />
+                        <img className={s.shape1} src={decor3} alt="shape" />
+                        <img className={s.shape2} src={decor4} alt="shape" />
+                        <img className={s.shape1} src={decor5} alt="shape" />
                     </div>
-                    
+
                     <div className={s.contentText}>
                         <div className={s.titleH3}><TitleH3 value="Hello, I’m" /></div>
                         <div className={s.name} >LUBA RAMASHKA</div>
@@ -37,17 +37,16 @@ export const Home = () => {
                     </div>
 
                     <div className={s.decor}>
-                        <img className={s.shape2} src={decor6} alt="shape"/> 
-                        <img className={s.shape1} src={decor7} alt="shape"/>
-                        <img className={s.shape2} src={decor8} alt="shape"/>
-                        <img className={s.shape1} src={decor9} alt="shape"/>
-                        <img className={s.shape2} src={decor10} alt="shape"/>
+                        <img className={s.shape2} src={decor6} alt="shape" />
+                        <img className={s.shape1} src={decor7} alt="shape" />
+                        <img className={s.shape2} src={decor8} alt="shape" />
+                        <img className={s.shape1} src={decor9} alt="shape" />
+                        <img className={s.shape2} src={decor10} alt="shape" />
                     </div>
                 </div>
-                    
-                
+
                 <img className={s.img} src={homePhoto} alt="photo" />
-                
+
             </div>
         </div>
     );
