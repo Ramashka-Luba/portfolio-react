@@ -2,7 +2,7 @@ import Button from "../../../common/button/Button";
 import TitleH2 from "../../../../components/common/titleH2/TitleH2";
 import TitleH3 from "../../../../components/common/titleH3/TitleH3";
 
-import s from "./Home2.module.scss";
+import s from "./Home3.module.scss";
 import homePhoto from "./../../../../assets/images/homePhoto.png";
 import decor1 from "./../../../../assets/images/decor/decor1.png";
 import decor2 from "./../../../../assets/images/decor/decor2.png";
@@ -16,19 +16,19 @@ import decor9 from "./../../../../assets/images/decor/decor9.png";
 import decor10 from "./../../../../assets/images/decor/decor10.png";
 
 
-export const Home2 = () => {
+export const Home3 = () => {
     return (
-        <section className={s.home}>
-            <div className={s.wrapper}>
+        <div className={s.home}>
+            {/* <div className={s.wrapper}> */}
                 <div className={s.inner}>
                     <div className={s.content}>
-                        <div className={s.decor}>
+                        {/* <div className={s.decor}>
                             <img className={s.shape1} src={decor1} alt="shape" />
                             <img className={s.shape2} src={decor2} alt="shape" />
                             <img className={s.shape1} src={decor3} alt="shape" />
                             <img className={s.shape2} src={decor4} alt="shape" />
                             <img className={s.shape1} src={decor5} alt="shape" />
-                        </div>
+                        </div> */}
 
                         <div className={s.contentText}>
                             <div className={s.titleH2}><TitleH2 value="Hello, I’m"/></div>
@@ -37,13 +37,13 @@ export const Home2 = () => {
                             <div className={s.btn}> <Button value="DOWNLOAD CV" /></div> 
                         </div>
 
-                        <div className={s.decor}>
+                        {/* <div className={s.decor}>
                             <img className={s.shape2} src={decor6} alt="shape" />
                             <img className={s.shape1} src={decor7} alt="shape" />
                             <img className={s.shape2} src={decor8} alt="shape" />
                             <img className={s.shape1} src={decor9} alt="shape" />
                             <img className={s.shape2} src={decor10} alt="shape" />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className={s.photo}>
@@ -51,9 +51,9 @@ export const Home2 = () => {
                     </div>
                     
                 </div>
-            </div>
-        </section>
+            {/* </div> */}
+        </div>
     );
 }
 
-export default Home2;
+export default Home3;
