@@ -9,8 +9,9 @@ export const App = () => {
   return (
     <div className="App">
       {/* <Home/> */}
-      {/* <About/> */}
+      
       <Home2/>
+      {/* <About/> */}
       {/* <Home3/> */}
     </div>
   );
