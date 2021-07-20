@@ -4,240 +4,314 @@
 
 
 .home {
-    // height: 100vh;
-    // height: 100%;
-    min-height: 100vh;
-    padding: 70px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    @media screen and (max-width: 1500px)  { 
-        // height: auto;
-
-    }
-    @media screen and (max-width: 1250px)  { 
-        padding: 40px;
-    }
-    @media screen and (max-width: 685px)  { 
-        padding: 15px;
-    }
-
-    .wrapper {
-        height: 100%;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    nav {
+        height: 60px;
         width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        position: fixed;
+        z-index: 50;
         display: flex;
-
-        @media screen and (max-width: 1250px)  { 
-            flex-direction: column;
-            align-items: center;
+        align-items: center;
+        .burgerBtn {
+            width: 40px;
+            height: 30px;
+            margin-left: 17px;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+            @media screen and (max-width: 1500px){ 
+                margin-left: 12px;
+            } 
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 40px;
+                height: 4px;
+                background-color: $tertiaryColor;
+                @media screen and (max-width: 1500px){ 
+                    width: 30px; 
+                } 
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 40px;
+                height: 4px;
+                background-color: $tertiaryColor;
+                @media screen and (max-width: 1500px){ 
+                    width: 30px; 
+                } 
+            }          
+            span {
+                position: absolute;
+                top: 13px;
+                width: 40px;
+                height: 4px;
+                background-color: $tertiaryColor;
+                @media screen and (max-width: 1500px){ 
+                    width: 30px; 
+                } 
+            }
         }
-        .content {
+    }
+    .wrapper{
+        height: 100%;
+        padding: 70px;
+        display: flex; 
+        justify-content: center;
+        align-items:center; 
+         // MD на height
+        @media screen and (max-height: 850px){ 
+            // padding: 50px; 
+        } 
+         // MD на width
+        @media screen and (max-width: 1500px){ 
+            // padding: 50px; 
+        }  
+        @media screen and (max-width: 1170px){ 
+            // padding: 20px 50px; 
+        }
+        .inner{
             width: 100%;
+            height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            flex-grow: 1;
-            padding: 53px;
-            background-color: $primaryColor;
-            @media screen and (max-width: 1500px)  {
-                padding: 20px 30px;
+            // MD на width
+            @media screen and (max-width: 1500px){ 
+                align-items: center;
             }
-            @media screen and (max-width: 1250px)  {
-                // max-width: 700px;
-                // width: 100%;
-                align-items: flex-start;
-                padding: 15px 30px;
+            @media screen and (max-width: 1170px){ 
+                flex-direction: column;
+                max-width: 800px;
+                width: 100%;
             }
-            @media screen and (max-width: 650px)  {
-                // max-width: px;
-                // width: 100%;
-            }
-            
-            @media screen and (max-width: 650px)  {
-                // max-width: 330px;
-                // width: 100%;
-            }
-            
 
-            .contentText {
-                margin: 70px 0;
-                @media screen and (max-width: 1500px)  { 
-                    margin: 40px 0;
+            .content{    
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 50px 25px;
+                background-color: $primaryColor;
+                // MD на height
+                @media screen and (max-height: 850px){ 
+                    padding: 25px 15px;  
                 }
-                @media screen and (max-width: 1250px)  { 
-                    margin: 15px 0;
+                // MD на width
+                @media screen and (max-width: 1500px){ 
+                    height: 90%;
+                    // padding: 20px 25px;
                 }
-                @media screen and (max-height: 720px)  { 
-                    margin: 25px 0;
+                @media screen and (max-width: 1170px){ 
+                    height: 45%;
+                    padding: 15px;
                 }
-
-                .titleH3 {}
-                .name {
-                    font-family: $ArchivoBlack;
-                    @include text (85px, 400, 92px);
-                    margin: 35px 0;
+                .decor {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .shape1 {
+                        width: 50px;
+                        height: 50px;
+                        animation-name: moveBall1;
+                        animation-duration: 3s; 
+                        animation-iteration-count:infinite;
+                        animation-timing-function:linear;
+                        // MD на width
+                        @media screen and (max-height: 700px){ 
+                            width: 30px;
+                            height: 30px;
+                        }
+                        // MD на width
+                        @media screen and (max-width: 1170px){ 
+                            width: 30px;
+                            height: 30px;
+                        }
+                        @media screen and (max-width: 500px){ 
+                            width: 20px;
+                            height: 20px;
+                        }
+                        @media screen and (max-width: 400px){ 
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    @keyframes moveBall1 {
+                        50% {
+                            transform: translate(0, 50px);
+                        }   
+                        to {
+                            transform: translate(0, 0);
+                        }
+                    }
+                    // MD на height
+                    @media screen and (max-height: 850px)  { 
+                            @keyframes moveBall1 {
+                                50% {
+                                    transform: translate(0, 25px);
+                                }
+                                to {
+                                    transform: translate(0, 0);
+                                }
+                            };
+                        }
+                    // MD на width
                     @media screen and (max-width: 1500px)  { 
-                        @include text (70px, 400, 65px);
+                        @keyframes moveBall1 {
+                            50% {
+                                transform: translate(0, 25px);
+                            }
+                            to {
+                                transform: translate(0, 0);
+                            }
+                        };
                     }
-                    @media screen and (max-width: 1250px)  { 
-                        @include text (40px, 400, 65px);
-                        margin: 15px 0;
+                    @media screen and (max-width: 1170px)  { 
+                        @keyframes moveBall1 {
+                            50% {
+                                transform: translate(0, 15px);
+                            }
+                            to {
+                                transform: translate(0, 0);
+                            }
+                        };
                     }
-                    @media screen and (max-height: 789px)  { 
-                        @include text (40px, 400, 60px);
+                    .shape2 {
+                        width: 50px;
+                        height: 50px;
+                        animation-name: moveBall2;
+                        animation-duration: 3s; 
+                        animation-iteration-count:infinite;
+                        animation-timing-function:linear;
+                         // MD на height
+                        @media screen and (max-height: 700px){ 
+                            width: 30px;
+                            height: 30px;
+                        }
+                        // MD на width
+                        @media screen and (max-width: 1170px){ 
+                            width: 30px;
+                            height: 30px;
+                        }
+                        @media screen and (max-width: 500px){ 
+                            width: 20px;
+                            height: 20px;
+                        }
+                        @media screen and (max-width: 400px){ 
+                            width: 15px;
+                            height: 15px;
+                        }
                     }
-
+                    @keyframes moveBall2 {
+                        50% {
+                            transform: translate(0,-50px);
+                        }   
+                        to {
+                            transform: translate(0, 0);
+                        }
+                    } 
+                    // MD на height
+                    @media screen and (max-height: 850px)  { 
+                        @keyframes moveBall2 {
+                            50% {
+                                transform: translate(0, -25px);
+                            }
+                            to {
+                                transform: translate(0, 0);
+                            }
+                        };
+                    }
                 }
-                .titleH2 {}
-                .btn {
-                    margin-top: 45px;
-                    @media screen and (max-width: 1250px)  { 
-                        margin-top: 20px;
+                // MD на width
+                @media screen and (max-width: 1500px)  { 
+                    @keyframes moveBall2 {
+                        50% {
+                            transform: translate(0, -25px);
+                        }
+                        to {
+                            transform: translate(0, 0);
+                        }
+                    };
+                }
+                @media screen and (max-width: 1170px)  { 
+                    @keyframes moveBall2 {
+                        50% {
+                            transform: translate(0, -15px);
+                        }
+                        to {
+                            transform: translate(0, 0);
+                        }
+                    };
+                }
+                .contentText {
+                    margin: 0 auto;
+                    .titleH2 {}
+                    .name {
+                        font-family: $ArchivoBlack;
+                        @include text (85px, 400, 92px);
+                        margin: 35px 0;
+                        // MD на height
+                        @media screen and (max-height: 850px){ 
+                            @include text (60px, 400, 70px);
+                            margin: 20px 0;  
+                        }
+                        @media screen and (max-height: 700px){ 
+                            @include text (27px, 400, 35px); 
+                        }
+                        // MD на width
+                        @media screen and (max-width: 1500px){ 
+                            @include text (60px, 400, 70px);
+                            margin: 20px 0;  
+                        }
+                        @media screen and (max-width: 1170px){ 
+                            @include text (40px, 400, 50px);
+                            margin: 15px 0;  
+                        }
+                        @media screen and (max-width: 750px){ 
+                            @include text (35px, 400, 40px);
+                            margin: 10px 0;  
+                        }
+                    }
+                    .titleH3 {}
+                    .btn {
+                        margin-top: 45px;
+                        // MD на height
+                        @media screen and (max-height: 850px){ 
+                            margin-top: 25px;  
+                        }
+                        // MD на width
+                        @media screen and (max-width: 1500px){ 
+                            margin-top: 25px;  
+                        }
+                        @media screen and (max-width: 1170px){ 
+                            margin-top: 15px;  
+                        }
                     }
                 }
             }
-        }
-       
-        .img {
-            object-fit: cover;
-            object-position: center 0px;
-            width: 100%;
-            @media screen and (max-width: 1600px)  { 
-                // width: 700px;
-            }
-            @media screen and (max-width: 1250px)  { 
-                // height: 480px;
-            }
-            @media screen and (max-width: 784px)  { 
-                // width: 600px;
-                height: 400px;
-            }
-            @media screen and (max-width: 650px)  { 
-                // width: 330px;
-                height: 400px;
+
+            .photo {
+                width: 100%;
+                // MD на width
+                @media screen and (max-width: 1500px){ 
+                    height: 90%;
+                }
+                @media screen and (max-width: 1170px){ 
+                    height: 65%;
+                }
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center 0px;
+                }
             }
         }
-    
     }
-}
-
-
-
-
-
-.decor {
-    max-width: 710px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.shape1 {
-    width: 50px;
-    height: 50px;
-
-    animation-name: moveBall1;
-    animation-duration: 3s; 
-    animation-iteration-count:infinite;
-    animation-timing-function:linear;
-
-    @media screen and (max-width: 1500px)  { 
-        width: 40px;
-        height: 40px;
-    }
-    @media screen and (max-width: 1250px)  { 
-        width: 20px;
-        height: 20px;
-    }
-}
-
-
-
-
-@keyframes moveBall1 {
-    50% {
-        transform: translate(0, 50px);
-    }
-    
-    to {
-        transform: translate(0, 0);
-    }
-} 
-@media screen and (max-width: 1250px)  { 
-    @keyframes moveBall1 {
-        50% {
-            transform: translate(0, 15px);
-        }
-        
-        to {
-            transform: translate(0, 0);
-        }
-    };
-}
-@media screen and (max-height: 720px)  { 
-    @keyframes moveBall1 {
-        50% {
-            transform: translate(0, 25px);
-        }
-        
-        to {
-            transform: translate(0, 0);
-        }
-    };
-}
-
-
-
-
-.shape2 {
-    width: 50px;
-    height: 50px;
-
-    animation-name: moveBall2;
-    animation-duration: 3s; 
-    animation-iteration-count:infinite;
-    animation-timing-function:linear;
-    @media screen and (max-width: 1500px)  { 
-        width: 40px;
-        height: 40px;
-    }
-    @media screen and (max-width: 1250px)  { 
-        width: 20px;
-        height: 20px;
-    }
-    
-}
-
-@keyframes moveBall2 {
-    50% {
-        transform: translate(0, -50px);
-    }
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@media screen and (max-width: 1250px)  { 
-    @keyframes moveBall2 {
-        50% {
-            transform: translate(0,-15px);
-        }
-        
-        to {
-            transform: translate(0, 0);
-        }
-    };
-}
-
-@media screen and (max-height: 720px)  { 
-    @keyframes moveBall2 {
-        50% {
-            transform: translate(0,-25px);
-        }
-        
-        to {
-            transform: translate(0, 0);
-        }
-    };
 }
