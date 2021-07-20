@@ -1,0 +1,29 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.progress {
+    margin-bottom: 20px;
+    @media screen and (max-width: 1170px){ 
+        margin-bottom: 13px;
+    }
+    .name {
+        @include text(24px, 500, 36px);
+        @media screen and (max-width: 1170px){ 
+            @include text(18px, 500, 25px);
+        }
+    }
+    .value {
+        @include text(24px, 500, 36px);
+        float: right;
+        @media screen and (max-width: 1170px){ 
+            @include text(18px, 500, 25px);
+        }
+    }
+    .skills {
+        height: 10px;
+        background-color: $tertiaryColor;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+}

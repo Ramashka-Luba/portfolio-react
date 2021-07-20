@@ -1,0 +1,18 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.serviceItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    .icon {
+        margin-bottom: 45px;
+    }
+    .text {
+        @include text(16px, 400, 24px)
+    }
+}

@@ -5,28 +5,55 @@
 .about {
     height: 100vh;
     width: 100vw;
+    @media screen and (max-width: 1170px){ 
+        height: 100%;
+    }
     .wrapper {
         height: 100%;
         display: flex;
+        // MD на width
+        @media screen and (max-width: 1170px){ 
+            flex-direction: column;
+        }
         .leftBlog {
             width: 50.5%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px;
+            padding: 50px;
+            @media screen and (max-width: 1170px){ 
+                width: 100%;
+            }
             .contentLeftBlog {
                 max-width: 850px;
                 width: 100%;
+                margin-bottom: 44px;
+                @media screen and (max-width: 1170px){ 
+                    margin-bottom: 0;
+                    max-width: 700px;
+                    width: 100%;
+                }
                 .titleH3 {
-                    margin: 11px 0 40px;
+                    margin: 24px 0 40px;
+                    @media screen and (max-width: 1170px){ 
+                        margin: 14px 0 20px;
+                    }
                 }
                 .line {
+                    width: 100px;
+                    height: 3px;
                     margin-bottom: 40px;
+                    @media screen and (max-width: 1170px){ 
+                        margin-bottom: 0;
+                    }
                 }
                 .text {
                     margin-top: 30px;
                     @include text (16px, 400, 24px);
+                    @media screen and (max-width: 1170px){ 
+                        margin-top: 20px;
+                    }
                 }
             }
         }
@@ -37,21 +64,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px;
+            padding: 50px;
+            @media screen and (max-width: 1170px){ 
+                width: 100%;
+            }
             .contentRightBlog {
                 max-width: 620px;
                 width: 100%;
+                @media screen and (max-width: 1170px){ 
+                    max-width: 700px;
+                    width: 100%;
+                }
                 .skillsContainer {
-                    .prodressContainer {
-                        .name {
-                            @include text (24px, 500, 36px);
-                        }
-                        .value {
-                            @include text (24px, 500, 36px);
-                            float: right;
-                        }
-                        .skills {}
-                    }
+                    margin-top: 20px;
                 }
             }      
         }

@@ -68,14 +68,14 @@
         align-items:center; 
          // MD на height
         @media screen and (max-height: 850px){ 
-            // padding: 50px; 
+            padding: 50px; 
         } 
          // MD на width
         @media screen and (max-width: 1500px){ 
-            // padding: 50px; 
+            padding: 50px; 
         }  
         @media screen and (max-width: 1170px){ 
-            // padding: 20px 50px; 
+            padding: 20px 50px; 
         }
         .inner{
             width: 100%;

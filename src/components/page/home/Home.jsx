@@ -29,7 +29,6 @@ export const Home = () => {
                     {value:"Services",href:"/services"},
                     {value:"Portfolio",href:"/portfolio"}, 
                     {value:"Contact",href:"/contact"}]
-
     return (
         <section className={s.home}>
             {/* Бургер */}

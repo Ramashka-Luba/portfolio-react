@@ -1,5 +1,6 @@
 import TitleH2 from "../../common/titleH2/TitleH2";
 import TitleH3 from "../../common/titleH3/TitleH3";
+import Progress from "./../../common/progress/Progress";
 import s from "./About.module.scss";
 
 export const About = () => {
@@ -34,51 +35,51 @@ export const About = () => {
                     <div className={s.contentRightBlog}>
                         <TitleH2 value="My Skills" />
                         <div className={s.skillsContainer}>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>HTML</span>
-                                <span className={s.value}>90%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>CSS</span>
-                                <span className={s.value}>85%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>React</span>
-                                <span className={s.value}>80%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>Wordpress</span>
-                                <span className={s.value}>70%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>Bootstrap</span>
-                                <span className={s.value}>60%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>Gulp</span>
-                                <span className={s.value}>65%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>Git</span>
-                                <span className={s.value}>65%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>Figma</span>
-                                <span className={s.value}>90%</span>
-                                <div className={s.skills}></div>
-                            </div>
-                            <div className={s.prodressContainer}>
-                                <span className={s.name}>Java Script</span>
-                                <span className={s.value}>20%</span>
-                                <div className={s.skills}></div>
-                            </div>
+                            <Progress
+                                name="HTML"
+                                value="90%"
+                                style= {{width:"90%"}}
+                            />
+                            <Progress
+                                name="CSS"
+                                value="85%"
+                                style= {{width:"85%"}}
+                            />
+                            <Progress
+                                name="React"
+                                value="80%"
+                                style= {{width:"80%"}}
+                            />
+                            <Progress
+                                name="Wordpress"
+                                value="70%"
+                                style= {{width:"70%"}}
+                            />
+                            <Progress
+                                name="Bootstrap"
+                                value="60%"
+                                style= {{width:"60%"}}
+                            />
+                            <Progress
+                                name="Gulp"
+                                value="60%"
+                                style= {{width:"60%"}}
+                            />
+                            <Progress
+                                name="Git"
+                                value="65%"
+                                style= {{width:"65%"}}
+                            />
+                            <Progress
+                                name="Figma"
+                                value="90%"
+                                style= {{width:"90%"}}
+                            />
+                            <Progress
+                                name="Java Script"
+                                value="20%"
+                                style= {{width:"20%"}}
+                            /> 
                         </div>
 
                     </div>
