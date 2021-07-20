@@ -15,10 +15,31 @@ import decor8 from "./../../../../assets/images/decor/decor8.png";
 import decor9 from "./../../../../assets/images/decor/decor9.png";
 import decor10 from "./../../../../assets/images/decor/decor10.png";
 
+import Menu from "./../../../common/menu/Menu";
+import { useState } from 'react';
+
+
+
 
 export const Home2 = () => {
+    const [menuActive, setMenuActive] = useState(false)
+
+    const items = [{value:"Home",href:"/home"}, 
+                    {value:"About",href:"/about"}, 
+                    {value:"Services",href:"/services"},
+                    {value:"Portfolio",href:"/portfolio"}, 
+                    {value:"Contact",href:"/contact"}]
+
     return (
         <section className={s.home}>
+            {/* Бургер */}
+            <nav>
+                <div className={s.burgerBtn} onClick={() => setMenuActive(!menuActive)}>
+                    <span />
+                </div>
+            </nav>
+            <Menu active={menuActive} setActive={setMenuActive} header={"Бургер меню"} items={items}/>
+
             <div className={s.wrapper}>
                 <div className={s.inner}>
                     <div className={s.content}>
@@ -31,10 +52,10 @@ export const Home2 = () => {
                         </div>
 
                         <div className={s.contentText}>
-                            <div className={s.titleH2}><TitleH2 value="Hello, I’m"/></div>
+                            <div className={s.titleH2}><TitleH2 value="Hello, I’m" /></div>
                             <div className={s.name} >LUBA RAMASHKA</div>
-                            <div className={s.titleH3}><TitleH3 value="HTML Developer"/></div>
-                            <div className={s.btn}> <Button value="DOWNLOAD CV" /></div> 
+                            <div className={s.titleH3}><TitleH3 value="HTML Developer" /></div>
+                            <div className={s.btn}> <Button value="DOWNLOAD CV" /></div>
                         </div>
 
                         <div className={s.decor}>
@@ -47,9 +68,9 @@ export const Home2 = () => {
                     </div>
 
                     <div className={s.photo}>
-                        <img className={s.img} src={homePhoto} alt="photo"/>
+                        <img className={s.img} src={homePhoto} alt="photo" />
                     </div>
-                    
+
                 </div>
             </div>
         </section>
