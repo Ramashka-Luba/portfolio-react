@@ -1,3 +1,26 @@
 @import "./../../../scss/abstracts/elements";
 @import "./../../../scss/abstracts/mixins";
 @import "./../../../scss/abstracts/variables";
+
+.service {
+    height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    .blockTop {
+        height: 67%;
+        .titleH3 {}
+        .serviceContainer {
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .blockBotton {
+        height: 33%;
+        background-color: $primaryColor;
+        display: flex;
+    }
+}

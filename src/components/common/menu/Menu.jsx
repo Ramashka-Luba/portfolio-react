@@ -1,11 +1,10 @@
 import s from "./Menu.module.scss";
 
-export const Menu = ({ header, items, active, setActive }) => {
+const Menu = ({ items, active, setActive }) => {
     return (
-        <div className={active ? s.menuActive : s.menu} onClick={() => setActive(false)}>
+        <div className={active ? `${s.menu} ${s.menuActive}` : s.menu} onClick={() => setActive(false)}>
             <div className={s.blur}/>
             <div className={s.menuContent} onClick={e => e.stopPropagation()}>
-                {/* <div className={s.menuHeader}>{header}</div> */}
                 <ul>
                     {items.map(item =>
                         <li>

@@ -6,21 +6,16 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    top:  50px;
+    top:  0px;
     left: 0;
+    z-index: 99;
 
     transform: translateX(-130%);
     transition: all 0.7s;
 }
-.menuActive {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top:  50px;
-    left: 0;
+.menu.menuActive  {
     transform: translateX(0);
     transition: all 0.4s;
-    z-index: 99;
 
 }
 .blur {
@@ -39,18 +34,12 @@
     align-items: center;
     transition: all 0.4s;
 }
-// .menuHeader {
-//     padding: 10px;
-//     font-size: 20px;
-//     color: white;
-//     border-bottom: 1px solid white;
-//     width: 100%;
-//     text-align: center;
-// }
-ul li a {
+a {
     color:white;
     text-decoration: none;
     @include text(25px, 600, 50px);
+    position: relative;
+    width: 100%;
     &::before {
     content:'';
 	position: absolute;
@@ -62,24 +51,29 @@ ul li a {
 	transition: all 0.5s ease;
     }
 }
-ul li a:hover::before {
-    width: 30%;
+a:hover::before {
+    width: 100%;
 }
 ul {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-ul li {
+li {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    width: 100%;
 }
-.materialIcons {
-    color:white;
-    margin-left: 10px;
+ul:first-child {
+    margin-top: 100px;
 }
+// .materialIcons {
+//     color:white;
+//     margin-left: 10px;
+// }
 @media screen and (max-width : 768px) {
     .menuContent {
         width: 100%;
