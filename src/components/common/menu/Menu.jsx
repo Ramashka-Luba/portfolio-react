@@ -8,7 +8,7 @@ const Menu = ({ items, active, setActive }) => {
                 <ul>
                     {items.map(item =>
                         <li>
-                            <a href={item.href}>{item.value}</a>
+                            <a className={s.link} href={item.href}>{item.value} </a>
                         </li>
                     )}
                 </ul>
