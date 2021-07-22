@@ -1,6 +1,6 @@
 import s from "./Button.module.scss";
 
-export const Button = (props) => {
+const Button = (props) => {
     return (
         <button className={s.button}>
             <span className= {s.span}>

@@ -9,7 +9,7 @@ import ServiceItem from "../../common/serviceItem/ServiceItem";
 import Button from "./../../common/button/Button";
 
 
-export const Service = () => {
+const Service = () => {
     return (
         <section className={s.service}>
             <div className={s.blockTop}>

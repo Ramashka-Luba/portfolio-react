@@ -3,7 +3,7 @@ import TitleH3 from "../../common/titleH3/TitleH3";
 import Progress from "./../../common/progress/Progress";
 import s from "./About.module.scss";
 
-export const About = () => {
+const About = () => {
     return (
         <section className={s.about}>
             <div className={s.wrapper}>

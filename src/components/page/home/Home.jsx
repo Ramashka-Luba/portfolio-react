@@ -21,7 +21,7 @@ import { useState } from 'react';
 
 
 
-export const Home = () => {
+const Home = () => {
     const [menuActive, setMenuActive] = useState(false)
 
     const items = [{value:"Home",href:"/home"}, 

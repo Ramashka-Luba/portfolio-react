@@ -1,0 +1,31 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.portfolioItem {
+    width: 390px;
+    margin: 0 30px;
+    // margin-left: 60px;
+    @media screen and (max-width: 1350px)  { 
+        width: 270px;
+    }
+    @media screen and (max-width: 550px)  { 
+        width: 200px;
+    }
+    .photo {
+        width: 390px;
+        @media screen and (max-width: 1350px)  { 
+            width: 270px;
+        }
+        @media screen and (max-width: 550px)  { 
+            width: 200px;
+        }
+    }
+    .title {
+        @include text(18px, 600, 27px);
+        margin: 65px 0 35px 0;
+    }
+    .text {
+        @include text(16px, 500, 24px);
+    }
+}

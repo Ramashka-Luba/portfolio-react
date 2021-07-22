@@ -1,6 +1,6 @@
 import s from "./TitleH3.module.scss";
 
-export const TitleH3 = (props) => {
+const TitleH3 = (props) => {
     return (
         <h3 className={s.titleH3}>
             {props.value}

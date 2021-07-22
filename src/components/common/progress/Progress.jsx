@@ -1,6 +1,6 @@
 import s from "./Progress.module.scss";
 
-export const Progress= ( props ) => {
+const Progress= ( props ) => {
     return (
         <div className={s.progress}>
             <span className={s.name}>{props.name}</span>
