@@ -1,0 +1,20 @@
+@import "./../../../scss/abstracts/elements";
+@import "./../../../scss/abstracts/mixins";
+@import "./../../../scss/abstracts/variables";
+
+.label {
+    @include text(26px, 400, 39px);
+    color: #C4C4C4;
+    display: block;
+}
+.input {
+    max-width: 765px;
+    width: 100%;
+    height: 50px;
+    display:block;
+    background-color: transparent;
+    border-bottom: 1px solid $tertiaryColor;
+    color: $tertiaryColor;
+    @include text(22px, 400, 30px);
+    margin-bottom: 25px;
+}

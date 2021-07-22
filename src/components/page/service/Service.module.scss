@@ -13,7 +13,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:black;
+        background-color: $backgroundColor;
         @media screen and (max-width: 1500px){ 
             padding: 50px;
         }

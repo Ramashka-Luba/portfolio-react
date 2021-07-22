@@ -7,8 +7,6 @@ import Photo4 from "./../../../assets/images/portfolio/project4.jpg";
 
 
 
-
-
 const Portfolio = () => {
     return (
         <section className={s.portfolio}>

@@ -58,12 +58,11 @@
             }
         }
     }
-    
     .title {
-        @include text(18px, 600, 27px);
+        @include text(22px, 500, 35px);
         margin: 65px 0 35px 0;
     }
     .text {
-        @include text(16px, 500, 24px);
+        @include text(16px, 500, 30px);
     }
 }
