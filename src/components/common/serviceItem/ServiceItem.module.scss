@@ -11,6 +11,17 @@
     width: 100%;
     .icon {
         margin-bottom: 45px;
+        width: 95px;
+        height: 90px;
+        @media screen and (max-width: 900px){ 
+            margin-bottom: 25px;
+            width: 75px;
+            height: 70px;
+        }
+        @media screen and (max-width: 500px){ 
+            width: 60px;
+            height: 55px;
+        }
     }
     .text {
         @include text(16px, 400, 24px)
