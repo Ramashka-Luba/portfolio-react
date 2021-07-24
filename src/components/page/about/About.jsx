@@ -2,10 +2,13 @@ import TitleH2 from "../../common/titleH2/TitleH2";
 import TitleH3 from "../../common/titleH3/TitleH3";
 import Progress from "./../../common/progress/Progress";
 import s from "./About.module.scss";
+import LinkedIn from "./../../../assets/images/social/LinkedIn.svg";
+import Instagram from "./../../../assets/images/social/Instagram.svg";
+
 
 const About = () => {
     return (
-        <section className={s.about}>
+        <section className={s.about} id="about">
             <div className={s.wrapper}>
                 <div className={s.leftBlog}>
                     <div className={s.contentLeftBlog}>
@@ -28,6 +31,16 @@ const About = () => {
                         <p className={s.text}>
                             I am hardworking, well-trained, excellent teamworker and on my own I find a common language with different people. I am a motivated person, I want to gain experience and be useful. I will be glad to be part of your team.
                         </p>
+                        <div className={s.photo}>
+                            <a href="https://www.linkedin.com/in/liubou-ramashka-9b703519a/">
+                                <img src={LinkedIn} alt="Linked In" className={s.photoItem}/>   
+                            </a>
+                            <a href="https://www.instagram.com/ramashka_luba/">
+                                <img src={Instagram} alt="Linked In" className={s.photoItem}/>
+                            </a>
+                            
+                        </div>
+                        
                     </div>
                 </div>
 

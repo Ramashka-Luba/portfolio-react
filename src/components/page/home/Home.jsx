@@ -24,13 +24,13 @@ import { useState } from 'react';
 const Home = () => {
     const [menuActive, setMenuActive] = useState(false)
 
-    const items = [{value:"Home",href:"/home"}, 
-                    {value:"About",href:"/about"}, 
-                    {value:"Services",href:"/services"},
-                    {value:"Portfolio",href:"/portfolio"}, 
-                    {value:"Contact",href:"/contact"}]
+    const items = [{value:"Home",href:"#home"}, 
+                    {value:"About",href:"#about"}, 
+                    {value:"Services",href:"#service"},
+                    {value:"Portfolio",href:"#portfolio"}, 
+                    {value:"Contact",href:"#contact"}]
     return (
-        <section className={s.home}>
+        <section className={s.home} id="home">
             {/* Бургер */}
             <nav>
                 <div className={s.burgerBtn} onClick={() => setMenuActive(!menuActive)}>

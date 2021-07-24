@@ -9,7 +9,7 @@ import Photo4 from "./../../../assets/images/portfolio/project4.jpg";
 
 const Portfolio = () => {
     return (
-        <section className={s.portfolio}>
+        <section className={s.portfolio} id="portfolio">
             <div className={s.wrapper}>
                 <div className={s.leftBlog}>
                     <div className={s.title}>
@@ -20,6 +20,7 @@ const Portfolio = () => {
                     <div className={s.content}>
                         <div className={s.portfolioItem}>
                             <PortfolioItem 
+                                href="https://pavelmalta.github.io/friday-project/#/login"
                                 src={Photo1}
                                 alt="Photo1"
                                 title="Development of a Web application for training."
@@ -28,6 +29,7 @@ const Portfolio = () => {
                         </div>
                         <div className={s.portfolioItem}>
                             <PortfolioItem 
+                                href=""
                                 src={Photo2}
                                 alt="Photo2"
                                 title="Development of a Web application for training."
@@ -36,6 +38,7 @@ const Portfolio = () => {
                         </div>
                         <div className={s.portfolioItem}>
                             <PortfolioItem 
+                                href=""
                                 src={Photo3}
                                 alt="Photo3"
                                 title="Development of a Web application for training."
@@ -44,6 +47,7 @@ const Portfolio = () => {
                         </div>
                         <div className={s.portfolioItem}>
                             <PortfolioItem 
+                                href=""
                                 src={Photo4}
                                 alt="Photo4"
                                 title="Development of a Web application for training."

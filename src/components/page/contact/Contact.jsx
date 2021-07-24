@@ -5,7 +5,7 @@ import s from "./Contact.module.scss";
 
 const Contact = () => {
     return (
-        <section className={s.contact}>
+        <section className={s.contact} id="contact">
             <div className={s.wrapper}>
                 <div className={s.rightBlog}>
                     <div className={s.content}>

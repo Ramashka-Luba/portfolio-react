@@ -11,7 +11,7 @@ import Button from "./../../common/button/Button";
 
 const Service = () => {
     return (
-        <section className={s.service}>
+        <section className={s.service} id="service">
             <div className={s.blockTop}>
                 <div className={s.wrapper}>
                     <div className={s.titleH2}>
