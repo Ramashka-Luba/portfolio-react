@@ -16,7 +16,7 @@ const Contact = () => {
                                 name="name"
                             />
                             <Input label="Email"
-                                type=""
+                                type="email"
                                 name="email"
                             />
                             <Input label="Phone"
