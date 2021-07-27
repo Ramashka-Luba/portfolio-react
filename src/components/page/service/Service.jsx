@@ -50,8 +50,9 @@ const Service = () => {
                 <div className={s.titleH3}>
                     <TitleH3 value="Considering options for remote work and work in the office" />
                 </div>
-                <Button value="CONTACT ME"
-                />
+                <a className={s.btn} href="#contact">
+                    <Button value="CONTACT ME"/>
+                </a>
             </div>
         </section>
     );
