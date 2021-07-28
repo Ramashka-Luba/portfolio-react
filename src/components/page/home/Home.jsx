@@ -37,7 +37,7 @@ const Home = () => {
                     <span />
                 </div>
             </nav>
-            <Menu active={menuActive} setActive={setMenuActive} header={"Бургер меню"} items={items}/>
+            
 
             <div className={s.wrapper}>
                 <div className={s.inner}>
@@ -72,6 +72,8 @@ const Home = () => {
 
                 </div>
             </div>
+            
+            <Menu active={menuActive} setActive={setMenuActive} items={items}/>
         </section>
     );
 }

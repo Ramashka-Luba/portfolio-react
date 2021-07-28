@@ -13,7 +13,23 @@ const particlesOptions = {
                 value_area: 800
             }
         }
+    },
+    interactivity: {
+        events: {
+            onhover: {
+                enable: true,
+                mode: "repulse"
+            },
+        },
+        modes: {
+            repulse: {
+                distance: 200
+            }
+        },
+        detect_on: "window"
     }
+
+
 };
 
 const Contact = () => {
@@ -21,7 +37,7 @@ const Contact = () => {
         <section className={s.contact} id="contact">
             <div className={s.wrapper}>
                 <div className={s.leftBlog}>
-                    <Particles className={s.particles} params={particlesOptions}/>
+                    <Particles className={s.particles} params={particlesOptions} />
                     <div className={s.content}>
                         <TitleH2 value="Get In Touch" />
                         <form action="" className={s.form}>

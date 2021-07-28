@@ -4,7 +4,7 @@ const Menu = ({ items, active, setActive }) => {
     return (
         <div className={active ? `${s.menu} ${s.menuActive}` : s.menu} onClick={() => setActive(false)}>
             <div className={s.blur}/>
-            <div className={s.menuContent} onClick={e => e.stopPropagation()}>
+            <div className={s.menuContent}>
                 <ul>
                     {items.map(item =>
                         <li>
@@ -12,6 +12,7 @@ const Menu = ({ items, active, setActive }) => {
                         </li>
                     )}
                 </ul>
+                
             </div>
         </div>
     );
