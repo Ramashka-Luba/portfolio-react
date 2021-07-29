@@ -4,21 +4,14 @@
 
 
 .portfolio {
-    height: 100vh;
-    @media screen and (max-width: 900px)  { 
-        height: auto;
-        padding-bottom: 50px;
-    }
+    min-height: 100vh;
     .wrapper {
-        height: 100%;
         display: flex;
         @media screen and (max-width: 900px)  { 
             flex-direction: column;
-            height: auto;
         }
         .leftBlog {
             width: 19%;
-            height: 100%;
             background-color: $primaryColor;
             display: flex;
             justify-content: center;
@@ -49,12 +42,12 @@
         }
         .rightBlog {
             width: 81%;
-            height: 100%;
+            min-height: 100vh;
             background-color: $backgroundColor;
             overflow: scroll;
             display: flex;
             align-items: center;
-            padding: 0 20px;
+            padding: 50px 20px;
             @media screen and (max-width: 900px)  { 
                 width: 100%;
             }

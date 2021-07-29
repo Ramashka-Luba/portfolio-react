@@ -3,12 +3,12 @@
 @import "./../../../scss/abstracts/variables";
 
 .service {
-    height: 100vh;
-    @media screen and (max-width: 900px){ 
-        height: auto;
-    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .blockTop {
-        height: 67%;
+        height: 67vh;
         padding: 50px 70px;
         display: flex;
         justify-content: center;
@@ -58,7 +58,7 @@
         }
     }
     .blockBotton {
-        height: 33%;
+        height: 33vh;
         padding: 50px 70px;
         background-color: $primaryColor;
         display: flex;
