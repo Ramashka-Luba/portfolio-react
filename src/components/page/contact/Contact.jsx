@@ -3,6 +3,7 @@ import TitleH2 from "../../common/titleH2/TitleH2";
 import Button from "../../common/button/Button";
 import s from "./Contact.module.scss";
 import Particles from "react-particles-js";
+import ReactTypingEffect from 'react-typing-effect';
 
 const particlesOptions = {
     particles: {
@@ -67,9 +68,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className={s.rightBlog}>
-                    <div className={s.title}>
-                        CONTACT
-                    </div>
+                    <ReactTypingEffect
+                        text={["CONTACT"]}
+                    />
                 </div>
             </div>
         </section>

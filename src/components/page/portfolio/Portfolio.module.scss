@@ -7,36 +7,38 @@
     min-height: 100vh;
     .wrapper {
         display: flex;
-        @media screen and (max-width: 900px)  { 
+        @media screen and (max-width: 1050px)  { 
             flex-direction: column;
         }
         .leftBlog {
-            width: 19%;
+            min-width: 387px;
             background-color: $primaryColor;
             display: flex;
             justify-content: center;
             align-items: center;
-            @media screen and (max-width: 900px)  { 
+            @media screen and (max-width: 1050px)  { 
                 transform: rotate(0deg);
-                width: auto;
+                min-width: auto;
                 margin: 50px;
             }
             @media screen and (max-width: 550px)  { 
                 transform: rotate(0deg);
-                width: auto;
                 margin: 30px 50px;
             }
-            .title {
+            span {
                 font-family: $ArchivoBlack;
-                @include text(60px, 400, 65px);
-                letter-spacing: 6px;
+                @include text(53px, 400, 53px);
+                letter-spacing: 3px;
                 transform: rotate(-90deg);
-                @media screen and (max-width: 900px)  { 
+                span {
+                    transform: rotate(180deg);
+                }
+                @media screen and (max-width: 1050px)  { 
                     transform: rotate(0deg);
-                    padding: 30px 0;
+                    padding: 15px 0;
                 }
                 @media screen and (max-width: 550px)  { 
-                    @include text(33px, 400, 35px);
+                    @include text(33px, 400, 30px);
                 }
             }
         }
@@ -48,7 +50,7 @@
             display: flex;
             align-items: center;
             padding: 50px 20px;
-            @media screen and (max-width: 900px)  { 
+            @media screen and (max-width: 1050px)  { 
                 width: 100%;
             }
             .content {

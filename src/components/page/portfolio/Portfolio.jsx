@@ -7,6 +7,8 @@ import Photo4 from "./../../../assets/images/portfolio/project4.jpg";
 
 import Fade from 'react-reveal/Fade';
 
+import ReactTypingEffect from 'react-typing-effect';
+
 
 
 const Portfolio = () => {
@@ -14,14 +16,13 @@ const Portfolio = () => {
         <section className={s.portfolio} id="portfolio">
             <div className={s.wrapper}>
                 <div className={s.leftBlog}>
-                    <div className={s.title}>
-                        PORTFOLIO
-                    </div>
+                <ReactTypingEffect
+                        text={["PORTFOLIO"]}
+                    />
                 </div>
                 <div className={s.rightBlog}>
                     <Fade right cascade>
                         <div className={s.content}>
-
                             <div className={s.portfolioItem}>
                                 <PortfolioItem
                                     href="https://pavelmalta.github.io/friday-project/#/login"
