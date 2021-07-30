@@ -16,9 +16,7 @@ const Portfolio = () => {
         <section className={s.portfolio} id="portfolio">
             <div className={s.wrapper}>
                 <div className={s.leftBlog}>
-                <ReactTypingEffect
-                        text={["PORTFOLIO"]}
-                    />
+                <ReactTypingEffect text={["PORTFOLIO"]}/>
                 </div>
                 <div className={s.rightBlog}>
                     <Fade right cascade>
@@ -38,7 +36,7 @@ const Portfolio = () => {
                                     src={Photo2}
                                     alt="Photo2"
                                     title="Development of a Web application for training."
-                                    text="This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used.This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used."
+                                    text="This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used.This is a"
                                 />
                             </div>
                             <div className={s.portfolioItem}>

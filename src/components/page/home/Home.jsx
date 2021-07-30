@@ -18,17 +18,20 @@ import decor10 from "./../../../assets/images/decor/decor10.png";
 import Menu from "./../../common/menu/Menu";
 import { useState } from 'react';
 
+import ReactTypingEffect from 'react-typing-effect';
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 
 
 const Home = () => {
     const [menuActive, setMenuActive] = useState(false)
 
-    const items = [{value:"Home",href:"#home"}, 
-                    {value:"About",href:"#about"}, 
-                    {value:"Services",href:"#service"},
-                    {value:"Portfolio",href:"#portfolio"}, 
-                    {value:"Contact",href:"#contact"}]
+    const items = [{value:"Home",href:"home"}, 
+                    {value:"About",href:"about"}, 
+                    {value:"Services",href:"service"},
+                    {value:"Portfolio",href:"portfolio"}, 
+                    {value:"Contact",href:"contact"}]
     return (
         <section className={s.home} id="home">
             {/* Бургер */}
@@ -53,7 +56,9 @@ const Home = () => {
                         <div className={s.contentText}>
                             <div className={s.titleH2}><TitleH2 value="Hello, I’m" /></div>
                             <div className={s.name} >LUBA RAMASHKA</div>
-                            <div className={s.titleH3}><TitleH3 value="HTML Developer" /></div>
+                            <div className={s.titleH3}>
+                                <ReactTypingEffect text={["HTML Developer"]}/>
+                            </div>
                             <div className={s.btn}> <Button value="DOWNLOAD CV" /></div>
                         </div>
 

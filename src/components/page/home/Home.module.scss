@@ -278,7 +278,44 @@
                             margin: 10px 0;  
                         }
                     }
-                    .titleH3 {}
+                    .titleH3 {
+                            span {
+                                @include text (50px, 900, 54px);
+                                @media screen and (max-height: 850px)  { 
+                                    @include text (35px, 400, 40px);
+                                }
+                                // MD на width
+                                @media screen and (max-width: 1500px)  { 
+                                    @include text (35px, 400, 40px);
+                                }
+                                @media screen and (max-width: 1170px)  { 
+                                    @include text (25px, 400, 35px);
+                                }
+                                @media screen and (max-width: 750px)  { 
+                                    @include text (20px, 400, 25px);
+                                }
+
+                                div {
+                                font-family: $ArchivoBlack;
+                                @include text (50px, 900, 54px);
+                                // MD на height
+                                @media screen and (max-height: 850px)  { 
+                                    @include text (35px, 400, 40px);
+                                }
+                                // MD на width
+                                @media screen and (max-width: 1500px)  { 
+                                    @include text (35px, 400, 40px);
+                                }
+                                @media screen and (max-width: 1170px)  { 
+                                    @include text (25px, 400, 35px);
+                                }
+                                @media screen and (max-width: 750px)  { 
+                                    @include text (20px, 400, 25px);
+                                }
+                            }
+                        }
+                    }
+                    
                     .btn {
                         margin-top: 45px;
                         // MD на height
