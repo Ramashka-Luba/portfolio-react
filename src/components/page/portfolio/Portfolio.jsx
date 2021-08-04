@@ -26,35 +26,35 @@ const Portfolio = () => {
                                     href="https://pavelmalta.github.io/friday-project/#/login"
                                     src={Photo1}
                                     alt="Photo1"
-                                    title="Development of a Web application for training."
-                                    text="This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used."
+                                    title="Development of a Web application for training. Learning web applications."
+                                    text="This is a fully fnctional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used."
                                 />
                             </div>
                             <div className={s.portfolioItem}>
                                 <PortfolioItem
-                                    href=""
+                                    // href=""
                                     src={Photo2}
                                     alt="Photo2"
-                                    title="Development of a Web application for training."
-                                    text="This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used.This is a"
+                                    title="Website development for the store."
+                                    text="The site was developed in React using the Material UI library. It is versatile, fully mobile-responsive. Also, minimal logic in Java Script was connected to simplify the further work of Front-end developers."
                                 />
                             </div>
                             <div className={s.portfolioItem}>
                                 <PortfolioItem
-                                    href=""
+                                    // href=""
                                     src={Photo3}
                                     alt="Photo3"
-                                    title="Development of a Web application for training."
-                                    text="This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used."
+                                    title="Landing page."
+                                    text="The task was to initially create a layout specifically for mobile versions, and only then set up a version for Desctop. The Pixel-perfect technique was also used."
                                 />
                             </div>
                             <div className={s.portfolioItem}>
                                 <PortfolioItem
-                                    href=""
+                                    // href=""
                                     src={Photo4}
                                     alt="Photo4"
-                                    title="Development of a Web application for training."
-                                    text="This is a fully functional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used."
+                                    title="Layout of Email letters."
+                                    text="The main task was to create a universal code that would be understandable for various email clients and would be equally beautifully displayed on all devices. In particular, instead of a block layout, a table layout was applied, universal tags and attributes were used."
                                 />
                             </div>
                         </div>

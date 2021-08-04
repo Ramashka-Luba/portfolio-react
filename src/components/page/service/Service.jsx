@@ -27,7 +27,7 @@ const Service = () => {
                                     <ServiceItem
                                         src={ReactIcons}
                                         alt="react icons"
-                                        text="I code sites and applications on React of any complexity (Node.js, NPM, Yarn, plus minimal logic logic in Java Script)."
+                                        text="I code sites and applications on React of any complexity (Node.js, NPM, Yarn, plus minimal logic in Java Script)."
                                     />
                                 </div>
                             </Fade>
