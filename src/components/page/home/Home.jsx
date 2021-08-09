@@ -14,6 +14,7 @@ import decor7 from "./../../../assets/images/decor/decor7.png";
 import decor8 from "./../../../assets/images/decor/decor8.png";
 import decor9 from "./../../../assets/images/decor/decor9.png";
 import decor10 from "./../../../assets/images/decor/decor10.png";
+import CVLUBA from "./../../../assets/documents/CVLUBA.pdf";
 
 import Menu from "./../../common/menu/Menu";
 import { useState } from 'react';
@@ -59,8 +60,7 @@ const Home = () => {
                             <div className={s.titleH3}>
                                 <ReactTypingEffect text={["HTML Developer"]}/>
                             </div>
-                            <a className={s.btn} href="./../../../assets/documents/CVLUBA.pdf" download><Button value="DOWNLOAD CV" /></a>
-                            {/* <div className={s.btn}><Button value="DOWNLOAD CV" /></div> */}
+                            <a className={s.btn} href={CVLUBA} download="CV LUBA"><Button value="DOWNLOAD CV"/></a>
                         </div>
 
                         <div className={s.decor}>
