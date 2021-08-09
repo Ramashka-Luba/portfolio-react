@@ -68,9 +68,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className={s.rightBlog}>
-                    <ReactTypingEffect
-                        text={["CONTACT"]}
-                    />
+                    <span>CONTACT</span>
+                    {/* <ReactTypingEffect text={["CONTACT"]}/> */}
                 </div>
             </div>
         </section>

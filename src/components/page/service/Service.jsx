@@ -9,6 +9,7 @@ import ServiceItem from "../../common/serviceItem/ServiceItem";
 import Button from "./../../common/button/Button";
 
 import Fade from 'react-reveal/Fade';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Service = () => {
@@ -19,7 +20,7 @@ const Service = () => {
                     <div className={s.titleH2}>
                         <TitleH2 value="Services" />
                     </div>
-                    <TitleH3 value="What I can do for you" />
+                    <TitleH3 value="What can I do for you" />
                     <div className={s.serviceContainer}>
                         <div className={s.content}>
                             <Fade left>
@@ -36,7 +37,7 @@ const Service = () => {
                                     <ServiceItem
                                         src={CodeIcons}
                                         alt="code icons"
-                                        text="Adaptive, cross-browser, simantic, valid layout, layout of email newsletters, Mobile first, Pixel-perfect, animation creation."
+                                        text="Adaptive, cross-browser, semantic, valid layout, layout of email newsletters, Mobile first, Pixel-perfect, animation creation."
                                     />
                                 </div>
                             </Fade>
@@ -45,7 +46,7 @@ const Service = () => {
                                     <ServiceItem
                                         src={DesktopIcon}
                                         alt="desktop icon"
-                                        text="I own the graphic editors Figma, Photoshop, I have the practice and skill of creating websites, landing pages and mobile and web applications"
+                                        text="I have proficiency in graphic software Figma, Photoshop, have practice skills in creating websites, landing pages, mobile and web applications."
                                     />
                                 </div>
                             </Fade>
@@ -56,11 +57,18 @@ const Service = () => {
 
             <div className={s.blockBotton}>
                 <div className={s.titleH3}>
-                    <TitleH3 value="Considering options for remote work and work in the office" />
+                    <TitleH3 value="Considering options for remote work and work in the office"/>
                 </div>
-                <a className={s.btn} href="#contact">
-                    <Button value="CONTACT ME" />
-                </a>
+                <Link
+                    className={s.btn}
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >
+                    <Button value="WRITE ME"/>
+                </Link>
             </div>
         </section>
     );

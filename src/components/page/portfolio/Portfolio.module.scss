@@ -32,9 +32,9 @@
                 @include text(53px, 400, 53px);
                 letter-spacing: 3px;
                 transform: rotate(-90deg);
-                span {
-                    transform: rotate(180deg);
-                }
+                // span {
+                //     transform: rotate(180deg);
+                // }
                 @media screen and (max-width: 1050px)  { 
                     transform: rotate(0deg);
                     padding: 15px 0;
@@ -61,7 +61,72 @@
                 display: flex;
                 align-items: flex-start;
             }
-            .portfolioItem {}
+            
+            .portfolioItem {
+                width: 390px;
+                margin: 0 15px;
+                @media screen and (max-width: 1350px)  { 
+                    width: 270px;
+                }
+                @media screen and (max-width: 550px)  { 
+                    width: 200px;
+                }
+                // Временно
+                .link {
+                    cursor: pointer;
+                    position: relative;
+                    &::after {
+                        content: "UNDER CONSTRUCTION";
+                        color: $tertiaryColor;
+                        font-family: $PoppinsMedium;
+                        @include text(20px, 600, 30px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 320px;
+                        height: 280px;
+                        background-color: $secondaryColor;
+            
+                        position: absolute;
+                        top: 35px;
+                        left: 35px;
+            
+                        opacity: 0;
+                        transition: all 0.5s ease;
+                        @media screen and (max-width: 1350px)  { 
+                            width: 220px;
+                            height: 190px;
+                            top: 25px;
+                            left: 25px;
+                        }
+                        @media screen and (max-width: 550px)  { 
+                            width: 150px;
+                            height: 130px;
+                        }
+                    }
+                    &:hover:after {
+                        opacity: 1;
+                    }
+                    
+                    .photo {
+                        width: 390px;
+                        @media screen and (max-width: 1350px)  { 
+                            width: 270px;
+                        }
+                        @media screen and (max-width: 550px)  { 
+                            width: 200px;
+                        }
+                    }
+                }
+                ////////////////////////////
+                .title {
+                    @include text(22px, 500, 35px);
+                    margin: 65px 0 35px 0;
+                }
+                .text {
+                    @include text(16px, 500, 30px);
+                }
+            }
         }
     }
 }

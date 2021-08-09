@@ -85,6 +85,7 @@
             display: block;
             max-width: 315px;
             width: 100%;
+            // transition: all 0.5 ease;
             @media screen and (max-width: 1170px)  { 
                 width: 250px;
                 @include text (20px, 500, 20px);

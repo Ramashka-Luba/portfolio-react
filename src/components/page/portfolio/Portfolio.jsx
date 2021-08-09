@@ -16,7 +16,8 @@ const Portfolio = () => {
         <section className={s.portfolio} id="portfolio">
             <div className={s.wrapper}>
                 <div className={s.leftBlog}>
-                <ReactTypingEffect text={["PORTFOLIO"]}/>
+                    <span>PORTFOLIO</span>
+                    {/* <ReactTypingEffect text={["PORTFOLIO"]}/> */}
                 </div>
                 <div className={s.rightBlog}>
                     <Fade right cascade>
@@ -26,37 +27,39 @@ const Portfolio = () => {
                                     href="https://pavelmalta.github.io/friday-project/#/login"
                                     src={Photo1}
                                     alt="Photo1"
-                                    title="Development of a Web application for training. Learning web applications."
-                                    text="This is a fully fnctional application. It was developed in a team with Front-end and Back-end developers. My task was to make a fully responsive layout. The application was developed in React using the SAAS preprocessor (SCSS). The Material UI library was also used."
+                                    title="Development of Web application for education"
+                                    text="This is fully functional application. It was developed in a team with Front-end and Back-end developers. 
+                                    My task was to make fully responsive layout. The application was developed in React using SAAS preprocessor (SCSS). 
+                                    The Material UI library was also used"
                                 />
                             </div>
                             <div className={s.portfolioItem}>
                                 <PortfolioItem
-                                    // href=""
+                                    href="https://ramashka-luba.github.io/React__shop/"
                                     src={Photo2}
                                     alt="Photo2"
-                                    title="Website development for the store."
-                                    text="The site was developed in React using the Material UI library. It is versatile, fully mobile-responsive. Also, minimal logic in Java Script was connected to simplify the further work of Front-end developers."
+                                    title="Website development for the store"
+                                    text="The site was developed in React using Material UI library. It is multipage, fully mobile-responsive.
+                                        Also minimal logic in Java Script was implemented to simplify the further work of Front-end developers"
                                 />
+                            </div>
+                            {/* Временно */}
+                            <div className={s.portfolioItem}>
+                                <a href="" className={s.link}>
+                                    <img className={s.photo} src={Photo3} />
+                                </a>
+                                <div className={s.title}>Landing page</div>
+                                <p className={s.text}>The initial task was to create a layout specifically for mobile versions and only then to set up a version for Desktop. 
+                                    Pixel-perfect technique was also used</p>
                             </div>
                             <div className={s.portfolioItem}>
-                                <PortfolioItem
-                                    // href=""
-                                    src={Photo3}
-                                    alt="Photo3"
-                                    title="Landing page."
-                                    text="The task was to initially create a layout specifically for mobile versions, and only then set up a version for Desctop. The Pixel-perfect technique was also used."
-                                />
+                                <a href="" className={s.link}>
+                                    <img className={s.photo} src={Photo4} />
+                                </a>
+                                <div className={s.title}>Layout of Email letters</div>
+                                <p className={s.text}>The main task was to create a universal code that would be understandable for various email clients and would be beautifully displayed on all devices at the same time. In particular, table layout was applied instead of block layout, also universal tags and attributes were used</p>
                             </div>
-                            <div className={s.portfolioItem}>
-                                <PortfolioItem
-                                    // href=""
-                                    src={Photo4}
-                                    alt="Photo4"
-                                    title="Layout of Email letters."
-                                    text="The main task was to create a universal code that would be understandable for various email clients and would be equally beautifully displayed on all devices. In particular, instead of a block layout, a table layout was applied, universal tags and attributes were used."
-                                />
-                            </div>
+
                         </div>
                     </Fade>
                 </div>
