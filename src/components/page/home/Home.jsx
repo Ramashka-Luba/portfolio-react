@@ -59,7 +59,8 @@ const Home = () => {
                             <div className={s.titleH3}>
                                 <ReactTypingEffect text={["HTML Developer"]}/>
                             </div>
-                            <div className={s.btn}> <Button value="DOWNLOAD CV" /></div>
+                            <a className={s.btn} href="./../../../assets/documents/CVLUBA.pdf" download><Button value="DOWNLOAD CV" /></a>
+                            {/* <div className={s.btn}><Button value="DOWNLOAD CV" /></div> */}
                         </div>
 
                         <div className={s.decor}>
