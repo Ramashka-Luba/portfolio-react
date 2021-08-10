@@ -43,7 +43,7 @@ const Contact = () => {
 
     useEffect(() => {
         if (fly) {
-            axios.post('https://smtp-nodejs-ser.herokuapp.com/sendMessage', body)
+            axios.post('http://localhost:3010/sendMessage', body)
                 .then((res) => {
                     console.log('ok')
                 })
