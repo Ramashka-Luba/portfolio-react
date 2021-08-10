@@ -43,7 +43,7 @@ const Contact = () => {
 
     useEffect(() => {
         if (fly) {
-            axios.post('http://localhost:3010/sendMessage', body)
+            axios.post('https://server-for-luba.herokuapp.com/sendMessage', body)
                 .then((res) => {
                     console.log('ok')
                 })
