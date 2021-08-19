@@ -4,6 +4,7 @@ import Photo1 from "./../../../assets/images/portfolio/project1.jpg";
 import Photo2 from "./../../../assets/images/portfolio/project2.jpg";
 import Photo3 from "./../../../assets/images/portfolio/project3.jpg";
 import Photo4 from "./../../../assets/images/portfolio/project4.jpg";
+import Photo5 from "./../../../assets/images/portfolio/project5.jpg";
 
 import Fade from 'react-reveal/Fade';
 
@@ -41,6 +42,15 @@ const Portfolio = () => {
                                     title="Website development for the store"
                                     text="The site was developed in React using Material UI library. It is multipage, fully mobile-responsive.
                                         Also minimal logic in Java Script was implemented to simplify the further work of Front-end developers"
+                                />
+                            </div>
+                            <div className={s.portfolioItem}>
+                                <PortfolioItem
+                                    href="https://ramashka-luba.github.io/Bootstrap/"
+                                    src={Photo5}
+                                    alt="Photo2"
+                                    title="Landing page-Bootstrap"
+                                    text="The project was developed on the Bootstrap framework. The task was to make the most of the Bootstrap components"
                                 />
                             </div>
                             {/* Временно */}

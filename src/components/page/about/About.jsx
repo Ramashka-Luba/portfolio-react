@@ -4,6 +4,10 @@ import Progress from "./../../common/progress/Progress";
 import s from "./About.module.scss";
 import LinkedIn from "./../../../assets/images/social/LinkedIn.svg";
 import Instagram from "./../../../assets/images/social/Instagram.svg";
+import Git from "./../../../assets/images/social/Git.svg";
+import Telegram from "./../../../assets/images/social/Telegram.svg";
+import Email from "./../../../assets/images/social/Email.svg"
+
 import Fade from 'react-reveal/Fade';
 
 
@@ -22,23 +26,38 @@ const About = () => {
                                 <TitleH2 />
                             </div>
                             <p className={s.text}>
-                            Hi, my name is Luba and I am HTML developer. I develop web and mobile applications of any complexity. I have art education and it helps me to find common ground with a designer and this is why my projects and my code are clean. I can also make decisions on my own.
+                                Hi, my name is Luba and I am HTML developer. I develop web and mobile applications of any complexity. I code mobile and web applications. I use React as my main tool.
                             </p>
                             <p className={s.text}>
-                            My main skills are: layout of mobile and web applications, adaptive layout, cross-browser layout, sematic layout, working with SVG, animation. I have basic Java Script skills. I also have proficiency in graphic software Figma, Photoshop, Corel Draw, Zeplin.
+                                My main skills are: layout of mobile and web applications, adaptive layout, cross-browser layout, sematic layout, working with SVG, animation. I have basic Java Script skills. I also have proficiency in graphic software Figma, Photoshop, Corel Draw, Zeplin.
                             </p>
                             <p className={s.text}>
-                            Previously I was working as a fashion designer and design engineer for 13 years.
+                                Now I am improving my skills in this direction and expanding them with new technologies. In my spare time I participate in layout marathons and improve my English.
                             </p>
                             <p className={s.text}>
-                            I am hardworking, well-learning, excellent teamworker and can find common ground with different people. I am motivated person, that wants to gain experience and be useful. I will be glad to be a part of your team.
+                                In the future I want to continue learning Java Script and move towards Front-end development.
+                            </p>
+                            <p className={s.text}>
+                                I would like to find a project /full-time job in creative company with interesting tasks and modern team!
+                            </p>
+                            <p className={s.text}>
+                                I will be glad to be a part of your team.
                             </p>
                             <div className={s.photo}>
                                 <a href="https://www.linkedin.com/in/liubou-ramashka-9b703519a/">
                                     <img src={LinkedIn} alt="Linked In" className={s.photoItem} />
                                 </a>
+                                <a href="https://github.com/Ramashka-Luba">
+                                    <img src={Git} alt="Git" className={s.photoItem} />
+                                </a>
+                                <a href="https://t.me/Ramashka_Luba">
+                                    <img src={Telegram} alt="Telegram" className={s.photoItem} />
+                                </a>
+                                <a href="mailto:lromashko911@gmail.com">
+                                    <img src={Email} alt="Email" className={s.photoItem} />
+                                </a>
                                 <a href="https://www.instagram.com/ramashka_luba/">
-                                    <img src={Instagram} alt="Linked In" className={s.photoItem} />
+                                    <img src={Instagram} alt="Instagram" className={s.photoItem} />
                                 </a>
                             </div>
                         </div>

@@ -58,9 +58,12 @@
                 .photo {
                     margin-top: 30px;
                     .photoItem {
-                        margin-right: 30px;
+                        margin-right: 20px;
                         width: 30px;
                         height: 30px;
+                        // &:last-child {
+                        //     margin-right: 0;
+                        // }
                     }
                 }
             }
