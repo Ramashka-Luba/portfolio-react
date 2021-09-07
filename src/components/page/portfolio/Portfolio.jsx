@@ -53,15 +53,25 @@ const Portfolio = () => {
                                     text="The project was developed on the Bootstrap framework. The task was to make the most of the Bootstrap components"
                                 />
                             </div>
-                            {/* Временно */}
                             <div className={s.portfolioItem}>
+                                <PortfolioItem
+                                    href="https://ramashka-luba.github.io/mob-first/"
+                                    src={Photo3}
+                                    alt="Photo3"
+                                    title="Landing page"
+                                    text="The initial task was to create a layout specifically for mobile versions and only then to set up a version for Desktop. 
+                                        Pixel-perfect technique was also used"
+                                />
+                            </div>
+                            {/* Временно */}
+                            {/* <div className={s.portfolioItem}>
                                 <a href="" className={s.link}>
                                     <img className={s.photo} src={Photo3} />
                                 </a>
                                 <div className={s.title}>Landing page</div>
                                 <p className={s.text}>The initial task was to create a layout specifically for mobile versions and only then to set up a version for Desktop. 
                                     Pixel-perfect technique was also used</p>
-                            </div>
+                            </div> */}
                             <div className={s.portfolioItem}>
                                 <a href="" className={s.link}>
                                     <img className={s.photo} src={Photo4} />

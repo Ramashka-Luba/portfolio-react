@@ -96,8 +96,8 @@ const About = () => {
                                 />
                                 <Progress
                                     name="Gulp"
-                                    value="60%"
-                                    style={{ width: "60%" }}
+                                    value="50%"
+                                    style={{ width: "50%" }}
                                 />
                                 <Progress
                                     name="Git"
@@ -111,8 +111,8 @@ const About = () => {
                                 />
                                 <Progress
                                     name="Java Script"
-                                    value="20%"
-                                    style={{ width: "20%" }}
+                                    value="10%"
+                                    style={{ width: "10%" }}
                                 />
                             </div>
                         </div>
