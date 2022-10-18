@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.0c817684.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.72e41c46.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.72e41c46.chunk.js.map",
+    "main.js": "/portfolio-react/static/js/main.3ca616fc.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.3ca616fc.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.f17926a5.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.f17926a5.js.map",
     "static/js/2.36a859dd.chunk.js": "/portfolio-react/static/js/2.36a859dd.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.0c817684.chunk.css.map": "/portfolio-react/static/css/main.0c817684.chunk.css.map",
     "static/js/2.36a859dd.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.36a859dd.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/portfolio-react/static/media/Poppins-SemiBold.f486b91d.ttf",
-    "static/media/CVLUBA.2f551523.pdf": "/portfolio-react/static/media/CVLUBA.2f551523.pdf",
+    "static/media/CVLUBA.c2a67e5d.pdf": "/portfolio-react/static/media/CVLUBA.c2a67e5d.pdf",
     "static/media/Email.96103e8d.svg": "/portfolio-react/static/media/Email.96103e8d.svg",
     "static/media/Git.e3379370.svg": "/portfolio-react/static/media/Git.e3379370.svg",
     "static/media/Instagram.872d57ce.svg": "/portfolio-react/static/media/Instagram.872d57ce.svg",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.f17926a5.js",
     "static/js/2.36a859dd.chunk.js",
     "static/css/main.0c817684.chunk.css",
-    "static/js/main.72e41c46.chunk.js"
+    "static/js/main.3ca616fc.chunk.js"
   ]
 }
